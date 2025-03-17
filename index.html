@@ -1,54 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-  <script src="https://kit.fontawesome.com/810c1bd5da.js" crossorigin="anonymous"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9820064181576509"
-     crossorigin="anonymous"></script>
-
-
-  <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Explorável</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <div class="container">
-    <div class="container2">
-      <div class="container3">
-        <div>
-          <img src="./images/image-equilibrium.jpg" widht="305" height="270">
-        </div>
-        <div class="div-2">
-          <p>Equilibrium #3429</p>
-          <p>Our Equilibirium collection promotes balance and calm.</p>
-        </div>
-        <div class="div-3">
-          <p><i class="fa-brands fa-ethereum"></i>0.041 ETH</p>
-          <p><i class="fa-solid fa-clock"></i>3 days left</p>
-        </div>
-        <div class="div-4">
-          <div>
-            <img src="./images/image-avatar.png" widht="35" height="35" />
-          </div>
-          <div class="div-p-correct">
-            <p>Creation of <p style="color: white; margin-left: 5px">Jules Wyvern</p>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+    <header>
+        <h1>Bem-vindo ao Universo Explorável</h1>
+        <p>Descubra a vastidão e os mistérios do cosmos.</p>
+    </header>
 
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9820064181576509"
-     crossorigin="anonymous"></script>
-  
+    <nav>
+        <a href="#galaxies">Galáxias</a>
+        <a href="#planets">Planetas</a>
+        <a href="#nebulas">Nebulosas</a>
+        <a href="#blackholes">Buracos Negros</a>
+        <a href="#stars">Estrelas</a>
+        <a href="#comets">Cometas</a>
+        <a href="#about">Sobre o Universo</a>
+    </nav>
+
+    <main class="card-grid">
+        <section id="galaxies" class="card-section">
+            <h2>Galáxias</h2>
+            <div class="card">
+                <img src="https://ichef.bbci.co.uk/ace/ws/640/cpsprodpb/D89C/production/_124725455_solar_system_sagittarius_2x640-nc.png.webp" alt="Galáxia">
+                <h3>Via Láctea</h3>
+                <p>Nossa galáxia, com bilhões de estrelas.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJ8KkGt3o0zYjKjUniIcGZPhBcaJQOfL7l1g&s" alt="Andrômeda">
+                <h3>Andrômeda</h3>
+                <p>A galáxia espiral mais próxima da Via Láctea.</p>
+            </div>
+            <p>As galáxias são vastos sistemas de estrelas, poeira e gás, mantidos juntos pela gravidade. Elas vêm em várias formas e tamanhos, desde espirais majestosas até elípticas gigantes.</p>
+        </section>
+
+        <section id="planets" class="card-section">
+            <h2>Planetas</h2>
+            <div class="card">
+                <img src="https://static.todamateria.com.br/upload/pl/an/planeta-terra-og.jpg?class=ogImageSquare" alt="Terra">
+                <h3>Terra</h3>
+                <p>Nosso lar, um planeta único com vida.</p>
+            </div>
+            <div class="card">
+                <img src="https://s1.static.brasilescola.uol.com.br/be/2021/11/planeta-marte.jpg" alt="Marte">
+                <h3>Marte</h3>
+                <p>O "Planeta Vermelho", com potencial para vida.</p>
+            </div>
+            <p>Planetas são corpos celestes que orbitam estrelas. Eles podem ser rochosos como a Terra ou gasosos como Júpiter, e alguns até abrigam luas e anéis.</p>
+        </section>
+
+        <section id="nebulas" class="card-section">
+            <h2>Nebulosas</h2>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg/1200px-Orion_Nebula_-_Hubble_2006_mosaic_18000.jpg" alt="Nebulosa de Orion">
+                <h3>Nebulosa de Orion</h3>
+                <p>Uma das nebulosas mais brilhantes e estudadas.</p>
+            </div>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSMt3zDInJd9k2mROFb5wfcjWDTpAUUFQmGg&s" alt="Nebulosa da Águia">
+                <h3>Nebulosa da Águia</h3>
+                <p>Famosa pelos "Pilares da Criação".</p>
+            </div>
+            <p>Nebulosas são nuvens de poeira e gás no espaço, onde novas estrelas nascem e morrem. Elas vêm em várias formas e cores, criando paisagens cósmicas espetaculares.</p>
+        </section>
+
+         <section id="blackholes" class="card-section">
+            <h2>Buracos Negros</h2>
+            <div class="card">
+                <img src="https://cdn.britannica.com/93/240893-138-200BD75F/Berkeley-scientists-find-a-way-to-see-invisible-black-holes.jpg?w=800&h=450&c=crop" alt="buraco negro">
+                <h3>Cygnus X-1</h3>
+                <p>Um dos buracos negros mais estudados.</p>
+            </div>
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Sagittarius_Astar_in_polarised_light.tif/lossy-page1-1200px-Sagittarius_Astar_in_polarised_light.tif.jpg" alt="Sagittarius A*">
+                <h3>Sagittarius A*</h3>
+                <p>O buraco negro supermassivo no centro da nossa galáxia.</p>
+            </div>
+            <p>Buracos negros são regiões do espaço-tempo com gravidade tão intensa que nada escapa, nem mesmo a luz. Eles são objetos misteriosos e poderosos que moldam o universo.</p>
+        </section>
+
+         <section id="stars" class="card-section">
+            <h2>Estrelas</h2>
+            <div class="card">
+                <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2022/05/2-sol.jpg" alt="Sol">
+                <h3>Sol</h3>
+                <p>A estrela que ilumina e aquece nosso sistema solar.</p>
+            </div>
+             <div class="card">
+                <img src="https://cdn.eso.org/images/large/eso1629b.jpg" alt="Proxima Centauri">
+                <h3>Proxima Centauri</h3>
+                <p>A estrela mais próxima do nosso sistema solar.</p>
+            </div>
+            <p>As estrelas são esferas de plasma que brilham intensamente, gerando luz e calor. Elas vêm em diferentes tamanhos, cores e temperaturas, e algumas até abrigam sistemas planetários.</p>
+        </section>
+
+         <section id="comets" class="card-section">
+            <h2>Cometas</h2>
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw3f7bU0fIMtFYpRDMF2HYvmcCV_uoy49dqg&s" alt="Cometa Halley">
+                <h3>Cometa Halley</h3>
+                <p>Um dos cometas mais famosos e previsíveis.</p>
+            </div>
+            <div class="card">
+                <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/cometneowise_img_20200705_084651_858.jpg?w=1900&h=2376" alt="Cometa Neowise">
+                <h3>Cometa Neowise</h3>
+                <p>Um cometa recente que encantou o mundo.</p>
+            </div>
+            <p>Cometas são corpos celestes gelados que liberam gás e poeira ao se aproximarem do Sol, criando caudas espetaculares. Eles são remanescentes da formação do nosso sistema solar.</p>
+        </section>
+
+        <section id="about" class="card-section">
+            <h2>Sobre o Universo</h2>
+            <p>O universo é tudo o que existe: espaço, tempo, matéria e energia. Ele é vasto, misterioso e em constante expansão. A astronomia é a ciência que estuda o universo, desde os planetas e estrelas até as galáxias e buracos negros.</p>
+            <p>A exploração espacial nos permite desvendar os segredos do universo e buscar respostas para perguntas fundamentais sobre nossa origem e lugar no cosmos.</p>
+        </section>
+    </main>
+
+    <div class="bg-animation"></div>
 </body>
-
 </html>

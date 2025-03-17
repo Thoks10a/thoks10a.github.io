@@ -1,97 +1,151 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
-
-* {
+body {
     margin: 0;
-    padding: 0;
+    font-family: "Roboto",sans-serif;
+    /* color: #fff; */
+    background-color: #000;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+    img {
+        height: 50%;
+        width: 50%;
+    }
 }
 
-.container {
-    background-color: hsl(217, 54%, 11%);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 100vh;
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+header p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.card-section {
+    h1 {
+
+    }
+    h2 {
+        color: bisque;
+    }
+    p {
+        color: darkolivegreen;
+    }
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin: 10%;
+}
+
+.card h3 {
+    color: #4CAF50; /* Verde para títulos dos cards */
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.card p {
+    color: #ccc; /* Cinza claro para textos dos cards */
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background-image: url('https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdDkwZjd3eTd4eGZkdXhmbW4xZ2hlYWppYnZjZnRxZzR5Mnd1Mnc3aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3og0IFrHkIglEOg8Ba/giphy.gif'); /* Substitua pelo seu GIF */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
 }
 
-.container2 {
-    background-color: hsl(216, 50%, 16%);
-    width: 20rem;
-    height: 33rem;
-    border-radius: 5%;
-    align-items: center;
+header {
     text-align: center;
-    -webkit-box-shadow: 0px 27px 0px 17px rgba(0, 0, 0, 0.5);
-    box-shadow: 0px 27px 0px 17px rgba(0, 0, 0, 0.1);
-    border-radius: 8%;
-
+    padding: 100px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
 }
 
-.container3 {
-    margin: 1.5rem;
-    font-family: Outfit;
-    font-size: 18px;
+header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+nav {
     text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-.container3 img {
-    border-radius: 3%;
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
 }
 
-.container3 p {
-    margin: 1rem 0 1rem 0;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.div-2 p:nth-child(1) {
-    color: hsl(0, 0%, 100%);
-    font-weight: 400;
-    text-align: left;
-}
-
-.div-2 p:nth-child(2) {
-    color: hsl(215, 32%, 27%);
-    font-size: 16px;
-    text-align: left;
-}
-
-.div-3 {
+.card-grid {
     display: flex;
-    justify-content: space-between;
-    border-bottom: solid 1px hsl(215, 32%, 27%);
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 20px;
 }
 
-.div-3 i {
-    margin-right: .5rem;
+.card {
+    /* ... (outros estilos) ... */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adiciona transições suaves */
 }
 
-.div-3 p:nth-child(1) {
-    color: hsl(178, 100%, 50%);
-    font-size: 16px
+.card:hover {
+    transform: translateY(-10px); /* Move o card para cima no hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adiciona sombra no hover */
 }
 
-.div-3 p:nth-child(2) {
-    color: hsl(215, 51%, 70%);
-    font-size: 14px;
+.card img {
+    /* ... (outros estilos) ... */
+    transition: transform 0.5s ease; /* Adiciona transição na imagem */
 }
 
-.div-4 {
-    text-align: left;
-    display: flex;
-    font-size: 16px;
-    color: hsl(215, 32%, 27%);
-    margin-top: 1rem;
-    height: 2rem;
-}
-
-.div-4 img {
-    margin-right: .5rem;
-    border: solid 1px white;
-    border-radius: 50%;
-}
-
-.div-p-correct {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    margin-left: 1rem;
+.card:hover img {
+    transform: scale(1.1); /* Aumenta a imagem no hover */
 }
